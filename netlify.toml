@@ -1,0 +1,8 @@
+[build]
+    base = "/"
+    command = "npm run build"
+    publish = "build/"
+[context.production]
+  publish = "build/"
+[context.deploy-preview]
+  publish = "build/"

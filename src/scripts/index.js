@@ -28,6 +28,7 @@ import "../styles/index.scss";
   }
 
   function ShopifyBuyInit() {
+
     var client = ShopifyBuy.buildClient({
       domain: "clemson-sports-memorabilia.myshopify.com",
       storefrontAccessToken: "62602b8890f27c99b27859bd4edda981"
@@ -42,7 +43,7 @@ import "../styles/index.scss";
           product: {
             buttonDestination: "checkout",
             variantId: "all",
-            width: "240px",
+            width: "220px",
             contents: {
               img: false,
               imgWithCarousel: false,
@@ -54,7 +55,7 @@ import "../styles/index.scss";
               quantity: false
             },
             text: {
-              button: "Buy the Ball"
+              button: "Buy the Ball - $379"
             },
             styles: {
               product: {
@@ -64,19 +65,27 @@ import "../styles/index.scss";
                   "margin-bottom": "50px"
                 }
               },
+              price: {
+                "color": "#fff",
+                "font-size": "18px",
+                "font-weight": "700"
+              },
               button: {
-                "background-color": "#d0a338",
+                "background-color": "#dda51c",
+                "color": "#fff",
                 "font-family": "Avant Garde, sans-serif",
                 "padding-left": "20px",
                 "padding-right": "20px",
+                "font-size": "20px",
                 ":hover": {
-                  "background-color": "#bb9332"
+                  "color": "#fff",
+                  "background-color": "#C08E19"
                 },
                 ":focus": {
-                  "background-color": "#bb9332"
+                  "background-color": "#C08E19"
                 },
                 "font-weight": "bolder",
-                "letter-spacing": "-.2px"
+                "letter-spacing": "-.2px",
               },
               compareAt: {
                 "font-size": "12px"
@@ -92,10 +101,10 @@ import "../styles/index.scss";
                 "background-color": "#d0a338",
                 "font-family": "Avant Garde, sans-serif",
                 ":hover": {
-                  "background-color": "#bb9332"
+                  "background-color": "#dda51c"
                 },
                 ":focus": {
-                  "background-color": "#bb9332"
+                  "background-color": "#dda51c"
                 },
                 "font-weight": "normal"
               },
@@ -127,10 +136,10 @@ import "../styles/index.scss";
                 "padding-left": "20px",
                 "padding-right": "20px",
                 ":hover": {
-                  "background-color": "#bb9332"
+                  "background-color": "#dda51c"
                 },
                 ":focus": {
-                  "background-color": "#bb9332"
+                  "background-color": "#dda51c"
                 },
                 "font-weight": "normal"
               }
@@ -142,10 +151,10 @@ import "../styles/index.scss";
                 "font-family": "Avant Garde, sans-serif",
                 "background-color": "#d0a338",
                 ":hover": {
-                  "background-color": "#bb9332"
+                  "background-color": "#dda51c"
                 },
                 ":focus": {
-                  "background-color": "#bb9332"
+                  "background-color": "#dda51c"
                 },
                 "font-weight": "normal"
               }
@@ -163,6 +172,12 @@ import "../styles/index.scss";
         }
       });
     });
+    var bg = document.querySelector('#bg');
+    console.log(bg);
+    bg.style.top = '0px';
+    bg.style.right = '0px';
+    bg.style.bottom = '-100px';
+    bg.style.left = '0px';
   }
 })();
 /*]]>*/

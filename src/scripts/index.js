@@ -176,7 +176,7 @@ import "../styles/index.scss";
     console.log(bg);
     bg.style.top = '0px';
     bg.style.right = '0px';
-    bg.style.bottom = '-100px';
+    bg.style.bottom = '0px';
     bg.style.left = '0px';
   }
 })();

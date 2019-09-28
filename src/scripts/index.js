@@ -172,12 +172,6 @@ import "../styles/index.scss";
         }
       });
     });
-    var bg = document.querySelector('#bg');
-    console.log(bg);
-    bg.style.top = '0px';
-    bg.style.right = '0px';
-    bg.style.bottom = '0px';
-    bg.style.left = '0px';
   }
 })();
 /*]]>*/

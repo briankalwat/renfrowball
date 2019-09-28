@@ -15,6 +15,14 @@ h1,h2,h3,h4,h5,h6,ul,ol,p {
     margin-bottom: 30px;
 }
 
+.lead {
+  line-height: 32px;
+}
+
+small {
+  font-size: 14px;
+}
+
 .bold { font-weight: 700; letter-spacing: -1px; }
 .boldest { font-weight: 900; }
 
@@ -63,4 +71,10 @@ h1,h2,h3,h4,h5,h6,ul,ol,p {
   -ms-filter: blur(10px);
   filter: blur(10px);
   transform: scale(1.1);
+}
+
+@media only screen and (min-width: 768px) {
+  .overflow-md-hidden {
+    overflow: hidden;
+  }
 }

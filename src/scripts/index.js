@@ -55,7 +55,7 @@ import "../styles/index.scss";
               quantity: false
             },
             text: {
-              button: "Buy the Ball - $379"
+              button: "Buy the Ball - $297"
             },
             styles: {
               product: {

@@ -41,7 +41,6 @@ import "../styles/index.scss";
         moneyFormat: "%24%7B%7Bamount%7D%7D",
         options: {
           product: {
-            buttonDestination: "checkout",
             variantId: "all",
             width: "220px",
             contents: {
